@@ -643,16 +643,16 @@ class PlaceDetails {
 
   final String? icon;
 
-  final String name;
+  final String? name;
 
   /// JSON opening_hours
   final OpeningHoursDetail? openingHours;
 
   @JsonKey(defaultValue: <Photo>[])
-  final List<Photo> photos;
+  final List<Photo>? photos;
 
   /// JSON place_id
-  final String placeId;
+  final String? placeId;
 
   /// JSON international_phone_number
   final String? internationalPhoneNumber;
@@ -665,7 +665,7 @@ class PlaceDetails {
   final String? scope;
 
   @JsonKey(defaultValue: <String>[])
-  final List<String> types;
+  final List<String>? types;
 
   final String? url;
 
@@ -677,7 +677,7 @@ class PlaceDetails {
   final String? website;
 
   @JsonKey(defaultValue: <Review>[])
-  final List<Review> reviews;
+  final List<Review>? reviews;
 
   final Geometry? geometry;
 
